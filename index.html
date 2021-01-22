@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<!--        <meta name="viewport" content="width=500, initial-scale=1.0">-->
+<!--        <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+        <title>Game of Life</title>
+
+        <!-- Our Style Sheet -->
+        <link rel="stylesheet" href='gameOfLife.css'>
+    </head>
+    <body>
+    <div id='world'>
+    </div>
+    <div>
+        <input id='startStop' type='button' value='Start' onclick='startStop()'/>
+        <input id='resetState' type='button' value='Clear' onClick='resetState()'/>
+        <input id='evolve' type='button' value='Evolve' onClick='evolve()'/>
+    </div>
+    <div>
+        <input type="range" id="delayTime" name="delayTime" min="10" max="3000" step="10" value="1000"
+               onchange="changeTimer(this.value)"/>
+        <label for="delayTime">Delay Time</label>
+    </div>
+
+    <!-- Our JavaScript -->
+    <script src='gameOfLife.js'></script>
+    </body>
+</html>
